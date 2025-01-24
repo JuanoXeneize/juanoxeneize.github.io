@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apolo Fish SA</title>
+    <link rel="icon" type="image/x-icon" href="images/favicom.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contactos -->
+    <div class="container contactos">
+        <div class="contact d-flex justify-content-center">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot" style="color: #2d5b6d;"></i> <a href="">Juan B. Justo 6549</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone" style="color: #2d5b6d;"></i> <a href="">+223 456 7890</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope" style="color: #2d5b6d;"></i> <a href="">asministracion@apolofish.com</a>
+                </li>
+                <li>
+                    <div id="google_translate_element"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Logo" width="270"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" role="button">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="image-section">
+                    <img src="images/image1.jpg" class="d-block w-100" alt="Imagen 1">
+                    <div class="overlay2" data-aos="flip-left" data-aos-duration="1000">
+                        <h2 class="overlay-title">Logistica</h2>
+                        <p class="overlay-text">
+                            Ofrecemos soluciones logísticas con una flota de camiones equipada para garantizar el transporte eficiente y seguro de mercancías.
+                        </p>
+                        <a href="#" class="btn btn-outline-light btn-sm">Conozca nuestra línea completa...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="image-section">
+                    <img src="images/image2.jpg" class="d-block w-100" alt="Imagen 2">
+                    <div class="overlay2" data-aos="flip-left" data-aos-duration="1000">
+                        <h2 class="overlay-title">Produccion</h2>
+                        <p class="overlay-text">
+                            Nos especializamos en el procesamiento de productos pesqueros, brindando servicios de clasificación, envasado y congelamiento con tecnología de última generación.
+                        </p>
+                        <a href="#" class="btn btn-outline-light btn-sm">Conozca nuestra línea completa...</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="image-section">
+                    <img src="images/image3.jpg" class="d-block w-100" alt="Imagen 3">
+                    <div class="overlay2" data-aos="flip-left" data-aos-duration="1000">
+                        <h2 class="overlay-title">Frigorifico</h2>
+                        <p class="overlay-text">
+                            Ofrecemos servicios de conservación frigorífica en cámaras de última generación, asegurando el almacenamiento seguro y óptimo de productos. Garantizamos calidad y frescura en todo momento.
+                        </p>
+                        <a href="#" class="btn btn-outline-light btn-sm">Conozca nuestra línea completa...</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="image-section">
+                    <img src="images/image4.jpg" class="d-block w-100" alt="Imagen 4">
+                    <div class="overlay2" data-aos="flip-left" data-aos-duration="1000">
+                        <h2 class="overlay-title">Comercio Internacional</h2>
+                        <p class="overlay-text">
+                            Nos especializamos en la exportación de productos pesqueros, ofreciendo servicios integrales como clasificación, envasado, congelamiento y almacenamiento en cámaras de frío.
+                        </p>
+                        <a href="#" class="btn btn-outline-light btn-sm">Conozca nuestra línea completa...</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    <!--Main-->
+    <div class="container my-5">
+        <div class="row align-items-center my-5">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <img src="images/main-1.jpg" class="img-fluid" alt="Logo">
+            </div>
+            <div class="col-md-6">
+                <h2>Resumen de la Actividad en el Sector</h2>
+                <p>La exportación de pescado representa una pieza clave en la economía global y en el desarrollo de comunidades locales, conectando a productores con consumidores de todo el mundo. Este sector no solo genera oportunidades económicas al abrir las puertas a mercados internacionales, sino que también actúa como un puente cultural al llevar los sabores y tradiciones de una región a otras latitudes.
+                En este proceso, se priorizan estándares rigurosos de frescura y calidad, garantizando que los productos lleguen en óptimas condiciones, desde el momento de su captura hasta su destino final. Para lograrlo, se emplean tecnologías avanzadas en almacenamiento, transporte refrigerado y logística, asegurando que los productos mantengan su integridad y cumplan con las normativas internacionales.
+                El sector pesquero desempeña un papel fundamental en la sostenibilidad ambiental, promoviendo prácticas responsables que protegen los ecosistemas marinos y aseguran la disponibilidad de recursos para las futuras generaciones. Esto incluye el cumplimiento de regulaciones internacionales y el apoyo a iniciativas de pesca sostenible. Por otro lado, la exportación de pescado también fomenta el desarrollo de comunidades costeras, generando empleo, mejorando la infraestructura local y fortaleciendo las cadenas de valor.</p>
+
+            </div>
+        </div>
+    </div>
+    <!--Productos-->
+    <div class="row my-5">
+        <div class="col-12">
+            <h2 class="text-center">Productos de calidad</h2>
+        </div>
+    </div>
+    <div class="products">
+        <div class="container  products">
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/image1.jpg" class="card-img-top" alt="Imagen del Producto 1">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Producto 1</h5>
+                            <p class="card-text">Descripción breve del producto 1. Ideal para clientes que buscan calidad y confianza.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/image2.jpg" class="card-img-top" alt="Imagen del Producto 2">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Producto 2</h5>
+                            <p class="card-text">Descripción breve del producto 2. Ideal para destacar características clave.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/image3.jpg" class="card-img-top" alt="Imagen del Producto 3">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Producto 3</h5>
+                            <p class="card-text">Descripción breve del producto 3. Perfecto para usuarios exigentes.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/image4.jpg" class="card-img-top" alt="Imagen del Producto 4">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Producto 4</h5>
+                            <p class="card-text">Descripción breve del producto 4. Ideal para complementar tus compras.</p>
+                            <a href="#" class="btn btn-outline-dark btn-sm">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Plantas-->
+    <div class="row my-5">
+        <div class="col">
+            <h2 class="text-center">Infraestructura</h2>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12 text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="images/plant.jpg" class="img custom-height" alt="...">
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-6 offset-3 text-center">
+            <h5>Nuestra Planta</h5>
+            <p>Nuestra empresa da sus primeros pasos en 1995 en la ciudad de Mar del Plata con la creación de Apolo Fish S.A. y comienza la construcción de la primera planta ubicada en Vértiz y Pescadores.
+                En octubre de 1997, la totalidad del paquete accionario fue adquirido por los actuales accionistas. En el mes de marzo de 2001, Apolo Fish s.a. adquiere una propiedad (lindera al frigorífico) ubicada en la calle Vertiz 3120 a los efectos de proceder a la ampliacion de la planta procesadora (recuperacion de residuos).
+            </p>
+        </div>
+        <div class="col-12 text-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Conocer mas...</a>
+        </div>
+    </div>
+
+    <!--Productos Main-->
+    <div class="image-section">
+        <div class="overlay" data-aos="flip-left" data-aos-duration="1000">
+            <h2>Calidad</h2>
+            <p>
+                Nuestros principales productos provienen tanto de tierra como del procesamiento en alta mar. 
+                Realizamos la elaboración en nuestras plantas y garantizamos la conservación mediante el congelamiento en nuestras cámaras frigoríficas de última generación.
+            </p>
+            <a href="#" class="btn btn-outline-light btn-sm">Conozca nuestra línea completa...</a>
+        </div>
+    </div>
+
+    <!--Main2-->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <img src="images/port.jpg" class="img-fluid custom-height" alt="Logo">
+            </div>
+            <div class="col-md-6">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Apolo Fish S.A. fue fundada el 8 de mayo de 1995 y se dedica a la elaboración, procesamiento y posterior comercialización al exterior de las principales especies oceánicas capturadas en el Mar Argentino (Zona FAO 41). En junio de ese mismo año, la firma adquirió tres lotes de terreno contiguos con su correspondiente edificación, ubicados en la zona industrial del puerto de la ciudad de Mar del Plata, con frente a las calles Vértiz y Pescadores. Estas instalaciones fueron transformadas para convertirse en una moderna planta de procesamiento de pescado, capaz de realizar la totalidad del proceso productivo: corte, envasado y congelación. Cabe destacar que esta planta procesadora está habilitada para exportar productos a la Comunidad Económica Europea.
+En octubre de 1997, la totalidad del paquete accionario fue adquirido por los actuales accionistas. Posteriormente, en marzo de 2001, Apolo Fish S.A. adquirió una propiedad lindera al frigorífico, ubicada en la calle Vértiz 3120, con el objetivo de ampliar la planta procesadora y mejorar la recuperación de residuos.
+<br>
+Este año, bajo una nueva administración, la empresa inicia una etapa de transformación destinada a recuperar los valores fundamentales y la calidad que la organización merece. Este cambio reafirma nuestro compromiso con la excelencia en cada aspecto de nuestras operaciones.
+                </p>
+                <a href="/nosotros.html" class="btn btn-outline-dark btn-sm">Leer mas...</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- Botón de volver al inicio -->
+    <button onclick="topFunction()" id="topBtn" class="top-button" title="Volver al inicio">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!--Footer-->
+    <footer class="footer-bg text-white text-center p-4">
+        <div class="row">
+            <div class="col-12 my-4">
+                <img src="images/logofoot.png" alt="Logo" width="200">
+            </div>
+            <div class="col-md-4 text-center p-3">
+                <h5>Ubicacion</h5>
+                <p><i class="fa-solid fa-location-dot"></i> Pescadores 1267 <br>Mar del Plata - Buenos Aires - Argentina</p>
+            </div>
+            <div class="col-md-4 text-center p-3">
+                <h5>Email</h5>
+                <p><i class="fa-solid fa-envelope"></i> contacto@exportacionpescado.com</p>
+                
+            </div>
+            <div class="col-md-4 text-center p-3">
+                <h5>Telefono</h5>
+                <p><i class="fa-solid fa-phone"></i> +223 456 7890</p>
+            </div>
+        </div>
+        <p style="color: #dadada;">© 2025 Apolo Fish SA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+        pageLanguage: 'es', // Idioma original de la página
+        includedLanguages: 'en,es,zh-CN,ru,ja,pt', // Idiomas habilitados
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+        // Función para volver al inicio
+        var topButton = document.getElementById("topBtn");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
