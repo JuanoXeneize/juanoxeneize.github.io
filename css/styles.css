@@ -1,10 +1,11 @@
-/* {
-    outline: 1px solid red;
-  }*/
+* {
+    outline: 1px solid red; /* Borra esta línea para eliminar los bordes rojos */
+  }
 
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -26,7 +27,7 @@ h2 {
 }
 
 .contactos {
-    padding: 8px;
+    padding: 6px;
     font-size: 14px;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -77,10 +78,6 @@ h2 {
     max-height: 500px; /* Limita la altura máxima del carousel (ajusta según tu diseño) */
 }
 
-.carousel-item img {
-    width: 100%;
-}
-
 .section-summary {
     display: flex;
     align-items: center;
@@ -97,23 +94,6 @@ h2 {
     padding-bottom: 10px;
 }
 
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-img-top {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
-    height: 200px; /* Establece una altura fija para las imágenes */
-    object-fit: cover; /* Recorta la imagen para que se ajuste a las dimensiones sin deformarse */
-    border-radius: 0; /* Opcional: ajusta los bordes para que coincidan con el diseño */
-}
-
-
-.card2:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
 .custom-height {
     height: 400px; /* Ajusta este valor según tus necesidades */
     object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor sin deformarse */
@@ -124,7 +104,7 @@ h2 {
 /* Contenedor principal con imagen de fondo */
 .image-section {
     position: relative;
-    background-image: url('https://www.victorpescados.com/wp-content/uploads/2019/03/fish-480830_1920-1-1024x399.jpg'); /* Ruta de tu imagen */
+    background-image: url('../images/fishes.jpg'); /* Ruta de tu imagen */
     background-size: cover;
     background-position: center;
     height: 500px; /* Ajusta la altura según lo necesites */
@@ -224,7 +204,6 @@ h2 {
 /* Título dentro del cuadro */
 .overlay h2 {
     color: aliceblue;
-    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
