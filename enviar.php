@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Configuración del correo
-    $destinatario = "administracion@apolofish.com";
+    $destinatario = "infon@apolofish.com";
     $asunto = "Nuevo mensaje de contacto";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
