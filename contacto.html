@@ -60,53 +60,34 @@
     </nav>
 
     <!-- Contacto -->
-    <div class="container my-4">
+    <div class="container p-5">
         <h2 class="text-center mb-4">Contáctanos</h2>
         <p class="text-center mb-4">
             ¿Tenes alguna consulta? Completa el siguiente formulario y nos pondremos en contacto a la brevedad.
         </p>
-        <div class="card p-4">
-            <form>
+        <div class="card p-5">
+            <form action="enviar.php" method="POST">
                 <!-- Nombre -->
                 <div class="mb-4">
                     <label for="nombre" class="form-label fw-bold">Nombre completo <span class="text-danger">*</span></label>
-                    <input
-                        type="text"
-                        class="form-control form-control-lg"
-                        id="nombre"
-                        placeholder="Ingresa tu nombre completo"
-                        required
-                    />
+                    <input type="text" class="form-control form-control-lg" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required />
                 </div>
                 <!-- Email -->
                 <div class="mb-4">
                     <label for="email" class="form-label fw-bold">Correo Electrónico <span class="text-danger">*</span></label>
-                    <input
-                        type="email"
-                        class="form-control form-control-lg"
-                        id="email"
-                        placeholder="tucorreo@ejemplo.com"
-                        required
-                    />
+                    <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
                 </div>
                 <!-- Mensaje -->
                 <div class="mb-4">
                     <label for="mensaje" class="form-label fw-bold">Tu mensaje <span class="text-danger">*</span></label>
-                    <textarea
-                        class="form-control form-control-lg"
-                        id="mensaje"
-                        rows="5"
-                        placeholder="Escribe tu mensaje aquí..."
-                        required
-                    ></textarea>
+                    <textarea class="form-control form-control-lg" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                 </div>
                 <!-- Botón Enviar -->
-                <div class="d-grid">
-                    <button type="submit" class="btn btn-info btn-lg text-white">
-                        Enviar mensaje
-                    </button>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn-apo btn-lg">Enviar mensaje</button>
                 </div>
             </form>
+            
         </div>
     </div>
 
@@ -125,7 +106,7 @@
             <div class="col-md-4 text-center p-3">
                 <h5>Email</h5>
                 <a href="mailto:administracion@apolofish.com" target="_blank">
-                    <p><i class="fa-solid fa-envelope"></i> contacto@exportacionpescado.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> administracion@apolofish.com</p>
                 </a>
                 
             </div>
