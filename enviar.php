@@ -1,36 +1,21 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los datos del formulario
-    $nombre = trim($_POST["nombre"]);
-    $email = trim($_POST["email"]);
-    $mensaje = trim($_POST["mensaje"]);
 
-    // Validación básica
-    if (empty($nombre) || empty($email) || empty($mensaje) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Por favor, completa todos los campos correctamente.";
-        exit;
-    }
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$mensaje = $_POST['mensaje'];
 
-    // Configuración del correo
-    $destinatario = "infon@apolofish.com";
-    $asunto = "Nuevo mensaje de contacto";
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$formcontent="
+Nombre: $nombre \n
+Email: $email \n
+Mensaje: $message
+";
 
-    // Contenido del correo
-    $contenido = "Has recibido un nuevo mensaje de contacto:\n\n";
-    $contenido .= "Nombre: $nombre\n";
-    $contenido .= "Correo: $email\n\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+$recipient = "info@apolofish.com";
 
-    // Enviar el correo
-    if (mail($destinatario, $asunto, $contenido, $headers)) {
-        echo "Mensaje enviado correctamente.";
-    } else {
-        echo "Error al enviar el mensaje.";
-    }
-} else {
-    echo "Acceso no autorizado.";
-}
+$subject = "Mensaje via web de $nombre";
+
+$header = "From: $email \r\n";
+$header .= "Content-Type: text/html; charset=utf-8 \r\n";
+mail($recipient, $subject, $formcontent, $header) or die("Error!");
+header("Location: gracias.html");
 ?>

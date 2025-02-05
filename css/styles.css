@@ -267,4 +267,10 @@ h2 {
 
 /* Google Translate */
 
+.full-height {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 70vh; /* Hace que el contenedor ocupe el 100% de la altura de la pantalla */
+}
 
