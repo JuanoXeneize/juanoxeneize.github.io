@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-phone" style="color: #2d5b6d;"></i> <a href="https://wa.me/5492235830456" target="_blank">+549 223 583 0456</a>
+                        <i class="fa-solid fa-phone" style="color: #2d5b6d;"></i> <a href="https://wa.me/5492235838633" target="_blank">+549 223 583 8633</a>
                     </li>
                     <li>
                         <a href="mailto:info@apolofish.com" target="_blank">
@@ -69,7 +69,7 @@
                         ¿Tienes alguna consulta? Completa el formulario y te responderemos a la brevedad.
                     </p>
                     <div class="card shadow p-4">
-                        <form action="enviar.php" method="post" autocomplete="off">
+                        <form action="sendmail.php" method="POST" autocomplete="off">
                             <!-- Nombre -->
                             <div class="mb-3">
                                 <label for="nombre" class="form-label fw-bold">Nombre completo <span class="text-danger">*</span></label>
@@ -96,7 +96,7 @@
         </div>
 
         <!-- Botón de WhatsApp flotante -->
-        <a href="https://wa.me/5492235830456" class="whatsapp-float" target="_blank">
+        <a href="https://wa.me/5492235838633" class="whatsapp-float" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
         
@@ -121,8 +121,8 @@
                 </div>
                 <div class="col-md-4 text-center p-3">
                     <h5>Telefono</h5>
-                    <a href="https://wa.me/5492235830456" target="_blank">
-                    <p><i class="fa-solid fa-phone"></i> +223 456 7890</p></a>
+                    <a href="https://wa.me/5492235838633" target="_blank">
+                    <p><i class="fa-solid fa-phone"></i> +223 583 8633</p></a>
                 </div>
             </div>
             <p style="color: #ffffff;">© 2025 Apolo Fish SA. Todos los derechos reservados.</p>
@@ -131,28 +131,11 @@
         <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement({
-                    pageLanguage: 'es', // Idioma original de la página
-                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                pageLanguage: 'es', // Idioma original de la página
+                includedLanguages: 'en,es,zh-CN,ru,ja,pt', // Idiomas habilitados
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
                 }, 'google_translate_element');
             }
-        
-            // Filtrar idiomas después de que se cargue el widget
-            function limitGoogleTranslateLanguages() {
-                const allowedLanguages = ['en', 'es', 'fr', 'de']; // Códigos de idiomas permitidos
-                const options = document.querySelectorAll('.goog-te-menu2-item span.text');
-                
-                options.forEach(option => {
-                    const languageCode = option.innerHTML.match(/\(([^)]+)\)/)?.[1]; // Extraer código de idioma
-                    if (languageCode && !allowedLanguages.includes(languageCode)) {
-                        option.closest('.goog-te-menu2-item').style.display = 'none'; // Ocultar idioma no permitido
-                    }
-                });
-            }
-        
-            // Asegúrate de ejecutar el script cuando el widget esté completamente cargado
-            document.addEventListener('DOMContentLoaded', () => {
-                setTimeout(limitGoogleTranslateLanguages, 1000);
-            });
         </script>
         
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
